@@ -1,0 +1,15 @@
+
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.NavigationBar {
+  width: 20%;
+  min-width: 200px; /* Set a minimum width to ensure a reasonable size */
+}
+
+.MainContent {
+  width: 80%;
+  padding: 20px; /* Add padding for spacing */
+}

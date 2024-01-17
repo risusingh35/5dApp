@@ -1,0 +1,12 @@
+/* NavigationBar.css */
+/* .flex-column {
+    flex-direction: column;
+    width: 250px;
+} */
+
+.navbar-collapse {
+    transition: max-height 0.3s ease-out;
+}
+
+/* .open .navbar-collapse {
+    max-height: 1000px;} */
