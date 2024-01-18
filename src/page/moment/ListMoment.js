@@ -10,8 +10,6 @@ const ListMoment = () => {
       console.log('userID', userID);
       try {
         const response = await axios.get(`${apiUrl}/moment/list?userID=${userID}`);
-    
-        console.log('response', response.data);
         if (response && response.status === 200) {
           setMoments(response.data);
         } else {
@@ -23,7 +21,6 @@ const ListMoment = () => {
         console.error('Error', error);
       }
     };
-    console.log('moments', moments);
     fetchMoments();
   }, []);
 
@@ -47,7 +44,7 @@ const ListMoment = () => {
               <td>{moment.tags}</td>
               <td>
                 <img
-                  src={`http://localhost:3000/${moment.imageUrl}`}
+                   src={`http://localhost:4000/${moment.imageUrl}`}
                   alt="Moment"
                   className="img-thumbnail"
                   style={{ maxWidth: '100px', maxHeight: '100px' }}
